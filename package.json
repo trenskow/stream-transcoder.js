@@ -14,5 +14,9 @@
 	"license": "BSD 2-Clause license",
 	"engines": {
 		"node": ">=0.10.15"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trenskow/stream-transcoder.js.git"
 	}
 }
