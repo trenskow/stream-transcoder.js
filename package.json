@@ -2,7 +2,7 @@
 	"name": "stream-transcoder",
 	"version": "0.0.1",
 	"author": "Kristian Trenskow <trenskow@me.com>",
-	"description": "FFmpeg based media transcoder that operates on streams.",
+	"description": "FFmpeg based media transcoder that supports streams.",
 	"main": "index.js",
 	"keywords": [
 		"ffmpeg",

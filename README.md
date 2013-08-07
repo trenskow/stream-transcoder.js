@@ -1,12 +1,12 @@
 #stream-transcoder.js
-**FFmpeg based media transcoder that support streaming.**
+**FFmpeg based media transcoder that supports streams.**
 
 ##Introduction
-Flexible media transcoding using FFmpeg. Stream media data in and out - converting media on the fly.
+Flexible media transcoding using FFmpeg. Stream media in and out - converting it on the fly.
 
-I created this, because the current FFmpeg transcoders for node did not properly support streaming as I needed.
+I created this, because the current FFmpeg transcoders for node.js did not properly support streams as I needed.
 
-Along with the [stream-body-parser](https://github.com/trenskow/stream-body-parser), this makes a great companion for doing stuff like this:
+Along with the [stream-body-parser](https://github.com/trenskow/stream-body-parser), this makes a great companion for doing stuff like this.
 
     var express = require('express'),
         StreamBodyParser = require('stream-body-parser'),
@@ -46,12 +46,12 @@ Along with the [stream-body-parser](https://github.com/trenskow/stream-body-pars
 In the above example the video is transcoded as it is being uploaded, and then piped directly into the database. So when the route is being called, the video is transcoded and stored.
 
 ## Installing FFmpeg
-FFmpeg is not installed with this package. So before usage install FFmpeg using your favorite package manager or download it at [ffmpeg.org](http://ffmpeg.org/).
+FFmpeg is not installed with this package. So before usage, install FFmpeg using your favorite package manager or download it at [ffmpeg.org](http://ffmpeg.org/).
 
 ## Class: Transcoder
 `Transcoder` is an EventEmitter.
 
-This class transcodes from one media format to another. It supports both file and streams as input/output. Some formats are not suited for streaming, in which case the `Transcoder` will emit an `error`.
+This class transcodes from one media format to another. It supports both files and streams as input and/or output. Some formats are not suited for streaming, in which case the `Transcoder` will emit an `error`, but most formats are.
 
 ### new Transcoder(stream)
 
