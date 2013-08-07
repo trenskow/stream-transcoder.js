@@ -1,0 +1,18 @@
+{
+	"name": "stream-transcoder",
+	"version": "0.0.1",
+	"author": "Kristian Trenskow <trenskow@me.com>",
+	"description": "FFmpeg based media transcoder that operates on streams.",
+	"main": "index.js",
+	"keywords": [
+		"ffmpeg",
+		"stream",
+		"transcoding",
+		"media",
+		"video"
+	],
+	"license": "BSD 2-Clause license",
+	"engines": {
+		"node": ">=0.10.15"
+	}
+}
