@@ -21,9 +21,9 @@ Along with the [stream-body-parser](https://github.com/trenskow/stream-body-pars
     	var myGridFSWriteStream = (Some MongoDB GridFS stream)
     	
     	new Transcoder(stream)
-    	    .maxSize(640, 480)
+    	    .maxSize(320, 240)
     	    .videoCodec('h264')
-    	    .videoBitrate(1500 * 1000)
+    	    .videoBitrate(800 * 1000)
     	    .fps(25)
     	    .audioCodec('libfaac')
     	    .sampleRate(44100)
