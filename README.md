@@ -2,7 +2,9 @@
 **FFmpeg based media transcoder that support streaming.**
 
 ##Introduction
-I created this, because the current FFmpeg transcoders for node, lack a lot of features. The most dominant one being able to stream in and out of FFmpeg.
+Flexible media transcoding using FFmpeg. Stream media data in and out - converting media on the fly.
+
+I created this, because the current FFmpeg transcoders for node did not properly support streaming as I needed.
 
 Along with the [stream-body-parser](https://github.com/trenskow/stream-body-parser), this makes a great companion for doing stuff like this:
 
@@ -27,7 +29,7 @@ Along with the [stream-body-parser](https://github.com/trenskow/stream-body-pars
     	    .sampleRate(44100)
     	    .channels(2)
     	    .audioBitrate(128 * 1000)
-    	    .videoFormat('mp4')
+    	    .format('mp4')
     	    .on('finish', function() {
     	    	next();
     	    })
