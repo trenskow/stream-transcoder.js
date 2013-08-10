@@ -6,7 +6,7 @@ Flexible media transcoding using FFmpeg. Stream media in and out - converting it
 
 I created this, because the current FFmpeg transcoders for node.js did not properly support streams as I needed.
 
-Along with the [stream-body-parser](https://github.com/trenskow/stream-body-parser), this makes a great companion for doing stuff like this.
+Along with the [stream-body-parser.js](https://github.com/trenskow/stream-body-parser.js), this makes a great companion for doing stuff like this.
 
     var express = require('express'),
         StreamBodyParser = require('stream-body-parser'),
