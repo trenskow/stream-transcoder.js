@@ -287,3 +287,19 @@ Returns transcoder object.
 Executes the transcoder without outputting any data. This is useful if you only need metadata for a media file.
 
 Returns child process.
+
+### transcoder.custom(key, value)
+
+   * `key` String - The key for the parameter
+   * `value` String [optional] - The value for the parameter.
+
+Adds a custom parameter to the FFmpeg command line - this is for all your special needs that is currently not implemented as a function in the Transcoder.
+
+As an example:
+
+    .custom('ss', '00:30:00')
+    
+Translates to on the FFmpeg command line:
+
+    ffmpeg -ss 00:30:00
+
