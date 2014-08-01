@@ -48,6 +48,10 @@ In the above example the video is transcoded as it is being uploaded, and then p
 ## Installing FFmpeg
 FFmpeg is not installed with this package. So before usage, install FFmpeg using your favorite package manager or download it at [ffmpeg.org](http://ffmpeg.org/).
 
+### Configure FFmpeg binary path
+
+Set the `FFMPEG_BIN_PATH` env var. (`ffmpeg` by default)
+
 ## Class: Transcoder
 `Transcoder` is an EventEmitter.
 
