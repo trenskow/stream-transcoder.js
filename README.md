@@ -1,4 +1,6 @@
 #stream-transcoder.js
+[![npm version](https://badge.fury.io/js/stream-transcoder.svg)](http://badge.fury.io/js/stream-transcoder)
+-
 **FFmpeg based media transcoder that supports streams.**
 
 ##Introduction
