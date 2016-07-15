@@ -9,7 +9,7 @@ Flexible media transcoding using FFmpeg. Stream media in and out - converting it
 I created this, because the current FFmpeg transcoders for node.js did not properly support streams as I needed.
 
 Along with the [stream-body-parser.js](https://github.com/trenskow/stream-body-parser.js), this makes a great companion for doing stuff like this.
-
+```js
     var express = require('express'),
         StreamBodyParser = require('stream-body-parser'),
         Transcoder = require('stream-transcoder');
@@ -44,7 +44,7 @@ Along with the [stream-body-parser.js](https://github.com/trenskow/stream-body-p
     });
     
     app.listen(3000);
-    
+```
 In the above example the video is transcoded as it is being uploaded, and then piped directly into the database. So when the route is being called, the video is transcoded and stored.
 
 ## Installing FFmpeg
@@ -78,7 +78,7 @@ Prepares a new Transcoder with a file as its input.
 Emitted when metadata is available for both input and output streams. If no output is specified (by using `transcoder.exec()`), only input streams will be described.
 
 This an example of a transcoding process metadata.
-
+```js
     {
         "input": {
             "streams": [
@@ -128,7 +128,7 @@ This an example of a transcoding process metadata.
             ]
         }
     }
-
+```
 ### Event: 'progress'
 
   * `progress` Object - Object describing current progress.
@@ -136,7 +136,7 @@ This an example of a transcoding process metadata.
 Emitted when progress has been made in the transcoding.
 
 This is an example of the `progress` object. Where `progress.progress` is a percentage of the total transcoding job.
-
+```js
     {
         "frame": 508,
         "fps": 253,
@@ -146,7 +146,7 @@ This is an example of the `progress` object. Where `progress.progress` is a perc
         "bitrate": 608000,
         "progress": 0.08014220132124063
     }
-
+```
 ### Event: 'finish'
 
 Emitted when transcoding is complete.
